@@ -1,3 +1,7 @@
+addLoadEvent(changepoet());
+addLoadEvent(change());
+addLoadEvent(good());
+
 function moveElement(elementID,final_x,final_y,interval)
 {
 	if (!document.getElementById) return false;
@@ -44,7 +48,7 @@ function moveElement(elementID,final_x,final_y,interval)
 	movement=setTimeout(repeat,interval);
 }
 
-addLoadEvent(changepoet());
+
 function changepoet()
 {
 	if (!document.getElementById) return false;
@@ -62,7 +66,7 @@ function changepoet()
 	moveElement("tp1",200,0,20);
 }
 
-addLoadEvent(good());
+
 
 function good()
 {
@@ -81,5 +85,68 @@ function good()
 	ga1.onmouseout=function()
 	{
 		ga1.style.fontSize="50px";
+	}
+}
+
+
+function change()
+{
+	if (!document.getElementById) return false;
+	if (!document.getElementById("home")||!document.getElementById("say")||!document.getElementById("study")||!document.getElementById("message")||!document.getElementById("photo")) return false;
+	if (!document.getElementById("home1")||!document.getElementById("say1")||!document.getElementById("study1")||!document.getElementById("message1")||!document.getElementById("photo1")) return false;
+	home1=document.getElementById("home1");
+	say1=document.getElementById("say1");
+	study1=document.getElementById("study1");
+	message1=document.getElementById("message1");
+	photo1=document.getElementById("photo1");
+
+	home=document.getElementById("home");
+	say=document.getElementById("say");
+	study=document.getElementById("study");
+	message=document.getElementById("message");
+	photo=document.getElementById("photo");
+	home1.onclick=function()
+	{
+		home.style.display="block";
+		say.style.display="none";
+		study.style.display="none";
+		message.style.display="none";
+		photo.style.display="none";
+	}
+
+	say1.onclick=function()
+	{
+		home.style.display="none";
+		say.style.display="block";
+		study.style.display="none";
+		message.style.display="none";
+		photo.style.display="none";
+	}
+
+	study1.onclick=function()
+	{
+		home.style.display="none";
+		say.style.display="none";
+		study.style.display="block";
+		message.style.display="none";
+		photo.style.display="none";
+	}
+
+	message1.onclick=function()
+	{
+		home.style.display="none";
+		say.style.display="none";
+		study.style.display="none";
+		message.style.display="block";
+		photo.style.display="none";
+	}
+
+	photo1.onclick=function()
+	{
+		home.style.display="none";
+		say.style.display="none";
+		study.style.display="none";
+		message.style.display="none";
+		photo.style.display="block";
 	}
 }

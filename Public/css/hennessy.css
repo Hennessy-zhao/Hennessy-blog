@@ -38,7 +38,7 @@ p.p2{
 #body.col-md-12
 {
 	height: auto;
-	background-color: rgb(133, 189, 190);
+	background-color: rgb(157, 221, 222);
 	/*background-color: rgb(69, 113, 245);*/
 }
 
@@ -99,17 +99,59 @@ p.p2{
 	margin-bottom: 20px;
 }
 
-#bright.col-md-12
+#home.col-md-12
 {
 	height: 1000px;
 	background-color: white;
 	margin-top: 50px;
+	display: block;
+	margin-bottom: 50px;
+}
+
+#say.col-md-12
+{
+	height: 500px;
+	background-color: yellow;
+	margin-top: 50px;
+	display: none;
+	margin-bottom: 50px;
+}
+
+#study.col-md-12
+{
+	height: 500px;
+	background-color: grey;
+	margin-top: 50px;
+	display: none;
+	margin-bottom: 50px;
+
+}
+
+#message.col-md-12
+{
+	height: 500px;
+	background-color: red;
+	margin-top: 50px;
+	display: none;
+	margin-bottom: 50px;
+
+}
+
+#photo.col-md-12
+{
+	height: 500px;
+	background-color: pink;
+	margin-top: 50px;
+	display: none;
+	margin-bottom: 50px;
+
 }
 
 #time.col-md-10
 {
 	height: auto;
 	margin-top: 50px;
+	
 }
 
 
@@ -124,6 +166,9 @@ p.p2{
 {
 	height: auto;
 	background-color: white;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 
@@ -169,6 +214,10 @@ a.a1:active{
 }
 
 
+p.pp1{
+	font-family: 微软雅黑;
+	font-size: 1em;
+}
 
 a.a2:link{
 	color: black;
@@ -188,4 +237,9 @@ a.a2:hover{
 a.a2:active{
 	text-decoration:none; 
 	color:black;
+}
+
+#ph4{
+	font-family: 微软雅黑;
+	margin-top: 20px;
 }
