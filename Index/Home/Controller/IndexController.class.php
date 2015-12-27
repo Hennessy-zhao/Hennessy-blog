@@ -21,6 +21,7 @@ class IndexController extends Controller {
     		{
     			if ($name=="Hennessy"&&$password=='hennessy070914') {
     				$this->success("",U('Home/Hennessy/hennessy','',''));
+		       		$_SESSION['host']="Hennessy";
 	    		}
 	    		else
 	    		{
