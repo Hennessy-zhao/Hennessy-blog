@@ -20,8 +20,8 @@ class IndexController extends Controller {
     		else
     		{
     			if ($name=="Hennessy"&&$password=='hennessy070914') {
+    		 		$_SESSION['host']="Hennessy";	
     				$this->success("",U('Home/Hennessy/hennessy','',''));
-		       		$_SESSION['host']="Hennessy";
 	    		}
 	    		else
 	    		{
@@ -33,7 +33,9 @@ class IndexController extends Controller {
     		
     	}
     	if (isset($_POST['submit2'])) {
-    		 $this->success("",U('Home/Hennessy/hennessy','',''));
+    		$_SESSION['host']="other";
+    		$this->success("",U('Home/Hennessy/hennessy','',''));
+    		 
     	}
     }
 }

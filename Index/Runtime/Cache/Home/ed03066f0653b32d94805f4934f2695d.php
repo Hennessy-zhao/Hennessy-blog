@@ -10,6 +10,7 @@
 </head>
 <body>
 	<div class="container-fluid">
+		<?php if($_SESSION['host']=="other") { echo "<div class='row'><div class='col-md-12 navbar-fixed-top' id='hostname'>"; echo "<center>您现在浏览的是Hennessy·zhao的博客</center>"; echo "</div></div>"; } ?>
 		<div class="row">
 			<div class="col-md-12" id="top">
 				<div class="row">
@@ -81,7 +82,9 @@
 									<div class="col-md-12" id="say"></div>
 									<div class="col-md-12" id="study"></div>
 									<div class="col-md-12" id="message"></div>
-									<div class="col-md-12" id="photo"></div>
+									<div class="col-md-12" id="photo">
+										<p class="photop1">>>相册列表</p>
+									</div>
 								</div>
 							</div>
 						</div>
