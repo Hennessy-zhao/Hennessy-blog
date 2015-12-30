@@ -79,14 +79,33 @@
 							<div class="col-md-7">
 								<div class="column">
 									<div class="col-md-12" id="home"></div>
-									<div class="col-md-12" id="say"></div>
+									<div class="col-md-12" id="say">
+										<div class="row">
+											 
+
+											<div class="col-md-12" id="say-text">
+												<form action="<?php echo U('Home/Hennessy/say','','');?>" method="post">
+													<textarea  placeholder="说点什么吧" id="textarea1" name="textarea1" rows="3" value=""></textarea>
+													<div id="sayhidden">
+														<p align="right">
+															<input type="radio" name="select1" value="public">公开&nbsp&nbsp&nbsp
+															<input type="radio" name="select1" value="unpublic">不公开
+															<input type="submit" class="btn btn-success" name="submit1" id="saybtn1" value="提交">
+														</p>
+													</div>
+												</form>
+											</div>
+											
+											<div class="col-md-12" id="say-message"></div>
+										</div>
+									</div>
 									<div class="col-md-12" id="study"></div>
 									<div class="col-md-12" id="message"></div>
 									<div class="col-md-12" id="photo">
-										<p class="photop1">>>相册列表</p>
+										<p class="photop1"><a href="#" class="photoa1">>>相册列表</a></p>
 									</div>
 								</div>
-							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -95,6 +114,15 @@
 		</div>
 
 	</div>
+	<script type="text/javascript">
+		host=1;
+		<?php if ($_SESSION['host']=='other') echo "host=0;"; ?>
+		if (host==0) 
+		{
+			hideen=document.getElementById("say-text");
+			hideen.style.display='none';
+		}
+	</script>
 	<script src="/hennessy/Public/js/addLoadEvent.js" ></script>
 	<script src="/hennessy/Public/js/hennessy.js" ></script>
 </body>

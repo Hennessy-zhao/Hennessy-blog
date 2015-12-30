@@ -65,6 +65,7 @@ p.p2{
 {
 	height: auto;
 	background-color: white;
+	border:1px solid rgba(43, 154, 162, 0.65);
 }
 
 #logo.col-md-12
@@ -73,6 +74,8 @@ p.p2{
 	margin-top: 10px;
 	background-color: white;
 	margin-bottom: 10px;
+	border:1px solid rgba(43, 154, 162, 0.65);
+
 }
 
 
@@ -122,11 +125,48 @@ p.p2{
 #say.col-md-12
 {
 	height: 500px;
-	background-color: yellow;
 	margin-top: 50px;
 	display: none;
 	margin-bottom: 50px;
+	background-color: #9DDDDE;
 }
+
+		#say-text.col-md-12
+		{
+			height: auto;
+			border:1px solid rgba(43, 154, 162, 0.65);
+			background-color: white;
+			margin-bottom: 10px;
+			background-color: white;
+			font-family: 微软雅黑;
+		}
+		#textarea1
+		{
+			border:0px;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			
+		}
+
+		#sayhidden
+		{
+			display: none;
+		}
+
+		#saybtn1
+		{
+			width: 20%;
+			text-align: center;
+		}
+
+		#say-message.col-md-12
+		{
+			height: 100px;
+			background-color: white;
+			border:1px solid rgba(43, 154, 162, 0.65);
+		}
+
 
 #study.col-md-12
 {
@@ -160,8 +200,29 @@ p.p2{
 
 
 		p.photop1{
-			font-family: 黑体;
+			font-family: 微软雅黑;
 			font-size: 15px;
+			padding: 10px;
+		}
+
+		a.photop1:link{
+			color: black;
+			text-decoration: none;
+		}
+
+		a.photoa1:visited{
+			text-decoration:none; 
+			color:black;
+		}
+
+		a.photoa1:hover{
+			text-decoration:underline; 
+			color:black;
+		}
+
+		a.photoa1:active{
+			text-decoration:none; 
+			color:black;
 		}
 
 #time.col-md-10
@@ -186,6 +247,7 @@ p.p2{
 	margin-bottom: 50px;
 	padding-top: 20px;
 	padding-bottom: 40px;
+	border:1px solid rgba(43, 154, 162, 0.65);
 }
 
 

@@ -1,6 +1,7 @@
 addLoadEvent(changepoet());
 addLoadEvent(change());
 addLoadEvent(good());
+addLoadEvent(saymessage());
 
 function moveElement(elementID,final_x,final_y,interval)
 {
@@ -150,3 +151,22 @@ function change()
 		photo.style.display="block";
 	}
 }
+
+
+function saymessage()
+{
+
+	if (!document.getElementById) return false;
+	if (!document.getElementById("textarea1")) return false;
+	if (!document.getElementById("sayhidden")) return false;
+	textarea=document.getElementById("textarea1");
+	sayhidden=document.getElementById("sayhidden");
+	textarea.onclick=function()
+	{
+		sayhidden.style.display="block";
+	}
+	
+
+
+}
+
