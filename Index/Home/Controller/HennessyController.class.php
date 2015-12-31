@@ -2,7 +2,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class HennessyController extends Controller {
-    public function hennessy(){
+		public function hennessy(){     
+        $where = "id=1";
+        $data=M('good')->where($where)->select();
+        $number=$data['0']['goodnumber'];
+        $this->assign('number', $number);
+
     	$this->display('Hennessy');
         }
 
@@ -45,5 +50,20 @@ class HennessyController extends Controller {
 			    echo"</script>";
 			}
     	}
+    }
+
+    public function number()
+    {
+    	$where = "id=1";
+        $data=M('good')->where($where)->select();
+        $number=$data['0']['goodnumber']+1;
+
+        
+
+		$update['goodnumber']=$number;
+		$where['id']=1;				
+		$result1=M('good')->where($where)->save($update);
+		
+
     }
 }

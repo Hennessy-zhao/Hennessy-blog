@@ -54,13 +54,14 @@
 											</div>
 											<div class="column">
 												<div class="col-md-12" id="good">
+													<form action="<?php echo U('Home/Hennessy/number','','');?>" id="gooder" method="post"></form>
 													<center>
 												 		<a href="#" style="font-size:50px;" id="ga1">
-															<span class="glyphicon glyphicon-thumbs-up"></span>
+															<span class="glyphicon glyphicon-thumbs-up" onclick="document.getElementById('gooder').submit()"></span>
 													 	</a>
 													</center>
 													<center>
-													 	<button class="btn btn-success" id="button1">点赞人数:0</button>
+													 	<button class="btn btn-success" id="button1">点赞人数:<?php echo ($number); ?></button>
 													</center>
 												</div>
 											</div>
@@ -114,6 +115,9 @@
 		</div>
 
 	</div>
+
+	<script src="/hennessy/Public/js/addLoadEvent.js" ></script>
+	<script src="/hennessy/Public/js/hennessy.js" ></script>
 	<script type="text/javascript">
 		host=1;
 		<?php if ($_SESSION['host']=='other') echo "host=0;"; ?>
@@ -123,7 +127,5 @@
 			hideen.style.display='none';
 		}
 	</script>
-	<script src="/hennessy/Public/js/addLoadEvent.js" ></script>
-	<script src="/hennessy/Public/js/hennessy.js" ></script>
 </body>
 </html>
