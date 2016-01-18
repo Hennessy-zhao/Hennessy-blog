@@ -54,15 +54,25 @@ class HennessyController extends Controller {
 
     public function number()
     {
+      
     	$where = "id=1";
         $data=M('good')->where($where)->select();
         $number=$data['0']['goodnumber']+1;
 
-        
-
-		$update['goodnumber']=$number;
-		$where['id']=1;				
+		$where = "id=1";
+        $update['goodnumber']=$number;				
 		$result1=M('good')->where($where)->save($update);
+        if ($result1) {
+            echo"<script language=\"javascript\">";
+            echo"location.href='".$_SERVER["HTTP_REFERER"]."'" ;
+            echo"</script>";    
+        }
+        else 
+        {
+            echo"<script language=\"javascript\">";
+            echo"alert(\"对不起，由于系统原因您未能点赞成功！\");location.href='".$_SERVER["HTTP_REFERER"]."'" ;
+            echo"</script>";    
+        }
 		
 
     }

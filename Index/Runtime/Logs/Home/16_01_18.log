@@ -1,0 +1,6 @@
+[ 2016-01-18T21:51:24+08:00 ] ::1 /hennessy/index.php/home/hennessy/number
+ERR: 1054:Unknown column '1d' in 'where clause'
+ [ SQL语句 ] : UPDATE `think_good` SET `goodnumber`='2' WHERE ( 1d=1 )
+ERR: 1054:Unknown column '1d' in 'where clause'
+ [ SQL语句 ] : UPDATE `think_good` SET `goodnumber`='2' WHERE ( 1d=1 )
+
