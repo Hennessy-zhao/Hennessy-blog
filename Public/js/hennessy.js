@@ -1,5 +1,4 @@
 addLoadEvent(changepoet());
-addLoadEvent(change());
 addLoadEvent(good());
 addLoadEvent(saymessage());
 
@@ -90,67 +89,6 @@ function good()
 }
 
 
-function change()
-{
-	if (!document.getElementById) return false;
-	if (!document.getElementById("home")||!document.getElementById("say")||!document.getElementById("study")||!document.getElementById("message")||!document.getElementById("photo")) return false;
-	if (!document.getElementById("home1")||!document.getElementById("say1")||!document.getElementById("study1")||!document.getElementById("message1")||!document.getElementById("photo1")) return false;
-	home1=document.getElementById("home1");
-	say1=document.getElementById("say1");
-	study1=document.getElementById("study1");
-	message1=document.getElementById("message1");
-	photo1=document.getElementById("photo1");
-
-	home=document.getElementById("home");
-	say=document.getElementById("say");
-	study=document.getElementById("study");
-	message=document.getElementById("message");
-	photo=document.getElementById("photo");
-	home1.onclick=function()
-	{
-		home.style.display="block";
-		say.style.display="none";
-		study.style.display="none";
-		message.style.display="none";
-		photo.style.display="none";
-	}
-
-	say1.onclick=function()
-	{
-		home.style.display="none";
-		say.style.display="block";
-		study.style.display="none";
-		message.style.display="none";
-		photo.style.display="none";
-	}
-
-	study1.onclick=function()
-	{
-		home.style.display="none";
-		say.style.display="none";
-		study.style.display="block";
-		message.style.display="none";
-		photo.style.display="none";
-	}
-
-	message1.onclick=function()
-	{
-		home.style.display="none";
-		say.style.display="none";
-		study.style.display="none";
-		message.style.display="block";
-		photo.style.display="none";
-	}
-
-	photo1.onclick=function()
-	{
-		home.style.display="none";
-		say.style.display="none";
-		study.style.display="none";
-		message.style.display="none";
-		photo.style.display="block";
-	}
-}
 
 
 function saymessage()
