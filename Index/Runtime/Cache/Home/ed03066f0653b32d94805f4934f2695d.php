@@ -41,7 +41,7 @@
 								<div class="col-md-9" id="bleft">
 									<div class="column">
 										<div class="col-md-12" id="time">
-											<embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" quality="high" bgcolor="#ffffff" width="100%" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+											<embed wmode="transparent" src="" quality="high" bgcolor="#ffffff" width="100%" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
 										</div>
 										<div class="col-md-12" id="logo">
 											<div class="column">
@@ -83,7 +83,7 @@
 							<div class="col-md-7">
 								<div class="column">
 									<div class="col-md-12" id="home">
-										<iframe src="home.html" name="target1"  frameborder="0"></iframe>
+										<iframe src="home.html" name="target1"  frameborder="0" width="100%" height="100%"></iframe>
 									</div>
 								</div>
 						</div>
@@ -106,6 +106,12 @@
 			hideen=document.getElementById("say-text");
 			hideen.style.display='none';
 		}
+
 	</script>
 </body>
 </html>
+
+
+
+<!-- http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf -->
+<!-- <embed wmode="transparent" src="clock.swf" quality="high" bgcolor="#ffffff" width="100%" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"> -->

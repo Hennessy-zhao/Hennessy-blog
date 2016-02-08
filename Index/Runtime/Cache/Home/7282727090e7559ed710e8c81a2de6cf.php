@@ -3,11 +3,17 @@
 <head>
 	<title>说说</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<script src="/hennessy/Public/js/jquery-2.1.4.min.js" ></script>
+	<script type="text/javascript" src="/hennessy/Public/js/jquery-2.2.0.js"></script>
 	<link  rel="stylesheet" href="/hennessy/Public/css/bootstrap.min.css"/>
 	<script src="/hennessy/Public/js/bootstrap.js" ></script>
 </head>
 <body>
-说说
+	<div class="row">
+		<div class="col-md-12">
+			<textarea class="form-control" rows="3"></textarea>
+		</div>
+	</div>
+
+	
 </body>
 </html>
