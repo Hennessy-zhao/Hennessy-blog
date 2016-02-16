@@ -41,7 +41,11 @@
 								<div class="col-md-9" id="bleft">
 									<div class="column">
 										<div class="col-md-12" id="time">
-											<embed wmode="transparent" src="" quality="high" bgcolor="#ffffff" width="100%" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+											<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="200" height="75">
+											  	<param name="movie" value="/hennessy/Public/flash/1.swf" />
+											 	<param name="quality" value="high" />
+											 	<embed src="/hennessy/Public/flash/1.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="100%" height="90"></embed>
+											</object>
 										</div>
 										<div class="col-md-12" id="logo">
 											<div class="column">
@@ -110,8 +114,3 @@
 	</script>
 </body>
 </html>
-
-
-
-<!-- http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf -->
-<!-- <embed wmode="transparent" src="clock.swf" quality="high" bgcolor="#ffffff" width="100%" height="100" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"> -->
