@@ -6,12 +6,14 @@
 	<script type="text/javascript" src="/hennessy/Public/js/jquery-2.2.0.js"></script>
 	<link  rel="stylesheet" href="/hennessy/Public/css/bootstrap.min.css"/>
 	<script src="/hennessy/Public/js/bootstrap.js" ></script>
+	<link  rel="stylesheet" href="/hennessy/Public/css/say.css"/>
+	
 </head>
 <body>
-	<div class="row">
-		<div class="col-md-12">
-			<textarea class="form-control" rows="3"></textarea>
-		</div>
+	<div id="say_msg">
+		<form action="#" method="post">
+			<textarea id="say_textarea"></textarea>
+		</form>
 	</div>
 
 	

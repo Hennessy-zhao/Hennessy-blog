@@ -74,7 +74,7 @@
 											<h4 id="ph4">简单信息</h4>
 											<p class="pp1"><a href="https://github.com/Hennessy-zhao" class="a2">Github&nbsp:&nbspHennessy-zhao</a></p>
 											<p class="pp1"><a href="http://weibo.com/u/5357689025/home?wvr=5&uut=fin&from=reg" class="a2">新浪微博&nbsp:&nbspHennessy-zhao</a></p>
-											<p class="pp1"><a href="#" class="a2">百度账号&nbsp：&nbspz岁月静好z</a></p>
+											<p class="pp1"><a href="http://tieba.baidu.com/home/main?id=ca817acbead4c2beb2bac37aaa25&fr=userbar" class="a2">百度账号&nbsp：&nbspz岁月静好z</a></p>
 											<br/>
 											<p class="pp1">爱好&nbsp:&nbsp编程，绘画</p>
 											<p class="pp1">座右铭&nbsp:&nbsp不要叹气，每叹一口气，就会少一份自信，要时刻相信，我无所不能</p>
